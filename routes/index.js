@@ -6,6 +6,10 @@ const controller = require('../controllers/home');//require action on routes
 
 router.get('/', controller.home);
 
+router.post('/tasks',controller.tasks);
+
+router.get('/delete-task',controller.deleteTasks);
+
 
 
 
