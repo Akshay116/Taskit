@@ -1,4 +1,134 @@
 h1{
-    color: red;
+    color:#e5989bd;
+    font: weight 900px;;
 }
+
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffe5d9;
+    color:#555b6e;
+    font-family: 'Bakbak One', cursive;
+
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+
+.app-title{
+    display: flex;
+   justify-content: center;
+   margin: 0;
+   
+   }
+#description-area{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    max-width: 100%;
+    margin-left: 1.5rem;
+    
+    
+}
+textarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+    background-color:#f8f9fa;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    /* box-shadow: none; */
+    
+  box-shadow: 0 8px 8px -4px lightblue;
+
+    resize: none; /*remove the resize handle on the bottom right*/
+    
+    
+    
+}
+
+::placeholder {
+    color: #555b6e;
+    font-size: 1.5em;
+    margin-top: 1.5rem;
+    align-content: center;
+    
+  }
+  
+#desc{
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.5em;
+}
+.task-container{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 1.25rem;
+    margin-bottom: 1.5rem;
+    max-width: 75%;
+   
+     
+
+}
+.task-container > div {
+    flex: 3; /*grow*/
+  }
+  select {
+    background-color: white;
+  border: thin solid #555b6e;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  /* reset */
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+select.round {
+    background-image:
+      linear-gradient(45deg, transparent 50%, gray 50%),
+      linear-gradient(135deg, gray 50%, transparent 50%),
+      radial-gradient(#ddd 70%, transparent 72%);
+    background-position:
+      calc(100% - 20px) calc(1em + 2px),
+      calc(100% - 15px) calc(1em + 2px),
+      calc(100% - .5em) .5em;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1.5em 1.5em;
+    background-repeat: no-repeat;
+  }
+  
+  
+#task-category{
+   margin: 20px 20px 30px 300px;
+    border-radius: 25%;
+    
+  
+
+}
+#task-priority{
+    margin: 20px 5px 30px 20px;
+    
+}
+#taskDate{
+    
+    margin: 25px 5px 30px 0px;
+    
+    
+        
+  }
+
+
 

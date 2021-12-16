@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width" , initial-scale=1.0>
     <title>To do app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@300&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
     
     <div id="main">
-        <div class="todoHeading">
+        <div class="app-title">
             <h1>TODO APP</h1>
         </div>
         <!-- form for taking input of description , category, duedate and creating a add button-->
         <div class="formDiv">
             <form action="/tasks" method="POST">
 
-                <div id="descDic"> 
-                    <label for="desc" class="entryHeading" style="margin-left: 5%;">DESCRIPTION</label><br>
-                    <textarea type = "text" name="description" id="desc" cols="75%" rows="5%" placeholder="what do you need to do?"></textarea>
+                <div id="description-area"> 
+                      
+                    <textarea type = "text" name="description" id="desc" cols="75%" rows="5%" placeholder="Mark your task here..."></textarea>
                 </div>
                 <div class="task-container">
                     <div id="task-category">
@@ -36,7 +39,7 @@
 
                         </select>
                     </div>
-                    <div class="task-priority">
+                    <div id="task-priority">
                         <label for="priority" class="priority-select">Set-Priority</label>
                         <br>
                         <select type="text" name="priority" id="priority-t">

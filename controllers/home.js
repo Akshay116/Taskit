@@ -24,7 +24,7 @@ module.exports.tasks = function(req,res){
      tasks: this.tasks
 
     },function(err,newtasks){
-        if(err){console.log('error in date'); return}
+        if(err){console.log('error cant add epmty task'); return}
        if(newtasks.duedate =='')
        {
            newtasks.duedate = 'NO';
