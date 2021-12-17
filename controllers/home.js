@@ -13,7 +13,8 @@ module.exports.home = function(req,res){
     })
    
 }
-
+// create ad task to mongo by input from user 
+// body parser in index require 
 module.exports.tasks = function(req,res){
     task.create({
      description : req.body.description,
@@ -35,6 +36,7 @@ module.exports.tasks = function(req,res){
         
     });
 }
+// dlete task from mongo and home 
 module.exports.deleteTasks = function(req ,res){
     let id = req.query;
     let count = Object.keys(id).length;
@@ -51,3 +53,16 @@ module.exports.deleteTasks = function(req ,res){
     res.redirect('back');
 
 }
+
+//to do later to show tasks according to priority 
+module.exports.impTasks = function(req,res){
+    task.find({priority: {$gt:high}},function(err,task){
+        if(err){
+            return;
+        }
+        task = task;
+        console.log(task);
+    })
+
+
+};
